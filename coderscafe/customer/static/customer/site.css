@@ -1,7 +1,17 @@
 
+  /* @import url('https://fonts.googleapis.com/css2?family=Italiana&display=swap'); */
+
+
+
 #front-page {
-    background: url('cafepic.jpg') no-repeat;
-    background-size: cover;
+    background: url('restaurant-background.jpg') no-repeat;
+    background-size:cover;
     width: 100vw;
     height: 100vh;
+    top: 35%;
+}
+
+body {
+    font-family:  'Italiana', serif;
+    font-weight: 700;
 }
