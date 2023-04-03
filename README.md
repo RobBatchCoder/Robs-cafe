@@ -71,152 +71,57 @@ You can view the live site here:- https://incredible-india.herokuapp.com/
 
 ## Site Aims
 
-* Incredible India is a website mainly meant to explore the Indian tourist destinattions with a good user experience.
-* The site aims to provide user with a visually pleasing and informative website that is intuitive to use and easy to navigate.
-* This website provides the user with the ability to read and view posts, as well as tools that allow users to search for a particular destination posts.
-* All users who sign up and sign in, can access the features of add post, like/unlike and comment on a blog post of this website.
-* User can access all the features of the website and can read, create, edit, and delete their own posts.
+* The pizza place is a website designed to allow customers to view the menu and order food. 
+* The website navigation and appearance is designed to be simple and easy to use.
+* This website allows the user add and remove items from their order as well as allowing the site admin to add and remove menu items.
+* The site allows the admin to create, read update and delete data in the database.
 
-## Agile Methodology
+## User Stories
 
-The Agile Methodology was used to plan this project. This was implemented through Github and the Project Board. Through the use of the Kanban board in the projects view in Github, the project was divided into a few different sections: 
+User stories were utalised to create realisitic scenarios and appropriate features to delivery to the user's needs. 
 
-* To Do- (All the User stories were initially entered in the 'To Do' column)
-* In Progress- (then during development story they were moved into the 'In Progress' column)
-* Done- (and then finally they get moved into 'Done' once the development completes)
+<img src="./coderscafe/media/readme_files/user-story-one.png" width="800">
+<img src="./coderscafe/media/readme_files/user-story-two.png" width="800">
+<img src="./coderscafe/media/readme_files/user-story-three.png" width="800">
 
-Please find my Kanban Board with my user stories [here](https://github.com/users/jyotiyadav2508/projects/3/views/1).
+A common theme in the user stories is the need for convience when ordering food. For this reason the navigation of the website must remain simple to allow 
+for quick and simple navigation. It should also always be possible for the user to make an order from any page of the website. A link placed in the footer and header will allow for this. The point here is to make the process of tranacting on the website as frictionless as possible
 
-## Epics and User Stories
-
-Following Epics were created which were further developed into 19 User Stories.
-
-### Epic 1- Website UI
+### Website UI
 Epic Goals for User- 
-* An intuitive User Interface with easy to navigate throughout the website 
-* Easily see the purpose of the site from the landing page
-* View a list of destinations and blog posts
-* Search bar for quick and easy access to required information
+* A simple and easy to navigate user interface.
+* The uses and functions of the website are immediataly obvious to the user on the landing page.
+* Have easy and quick asses to the menu and the corresponding menu items description.
+* Search bar to allow for quicker on site navigation.
 
-#### Related User Stories:
-* As a site user I can easily see the purpose of the site from the landing page so that I can see if the site is relevant to my needs.
-* As a site user I can view a list of destinations so that I can see a list of posts relating to my specific interest.
-* As a site user I can view a paginated list of posts so that easily select a post to view.
-* As a site user I can click on a post so that I can read the full article.
-* As a site user I can use a search bar to search for a specific place so that I have quick and easy access to the information I need.
+### Registration and Account Management
+* Quick and simple account creation. 
+* Allow admin to easily create, read, update and delete menu items from the data base.
+* Allow admin accounts to be created and removed.
 
-### Epic 2- Registration and Account Management
-Epic Goals-
-* Easy registration of an account
-* Easy Sign Up, Sign in and Sign Out
-* Upon signing in, the user should be able to like, comment on a blog post
-* Easy access to Create, Read, Update and Delete (CRUD) features upon signing in
-* Visibility of personalized blog posts and comments
-
-#### Related User Stories:
-* As a site user, I can register an account so that I can comment and like.
-* As a registered user, I can login and logout of the site so that I can access my content.
-* As a site user, I can view the number of likes on each post so that I can see which is the most popular or viral.
-* As a site user, I can view comments on an individual post so that I can read the conversation.
-* As a registered user, I can create a post of tourist place so that I can share it with other.
-
-### Epic 3- Blog Post Management
-Epic Goals-
-* Create/ Update / Read / Delete blog posts.
-* View their created blog posts
-* Approve and publish a post
-
-#### Related User Stories:
-* As a site admin, I can create draft posts so that I can finish writing the content later.
-* As a site admin/author, I can create, read, update and delete posts to manage the blog content.
-* As a site admin, I can delete any comment so that I can filter out objectionable comments.
-* As a author, I can access all my blog posts easily in one place so that I can easily track my activity on the site.
-
-### Epic 4- Comments and Like Management
-Epic Goals-
-* Add /Delete and View Comments on a post
-* Like / Unlike a post
-
-#### Related User Stories:
-* As a logged-in user I can leave comments on a post so that I can be involved in the conversation.
-* As a logged-in user I can edit/delete my comments so that I can update/delete my post opinion.
-* As a logged-in user I can like or unlike a post so that I can interact with the content.
-
-## Tasks
-
-The tasks for the website development process was closely followed as mentioned in CI's Django module "I Think Therefore I Blog" walkthrough project. The task is generally the developers step towards preparing the app.
-The tasks that I have followed during the development phase were carried out in this order.
-
-**Before Project Inception**
-
-- Design ERD and Data 
-- Create Repository in GitHub
-- Create Project, Epics, User Stories and prepare Kanban Board
-
-**Creation of Project in GitPod**
-
-- Create the django project. Check details in [deployment-section](#deployment)
-- Deploying app to Heroku - Details in [deployment](#deployment) section
-- Create Database Models
-	- Set up models.py file in "blog" directory
-- Build Admin site
-- Set up Templates
-	- Create base.html - Navbar and Footer content, which gets extended to all the other template files
-	- Add responsiveness to navigation and footer
-    - Create index.html, view and style
-	- Set up template file features with views.py and urls.py
-  - about.html (Description about incredible india)
-  - blog.html (to view all blog posts)
-  - user_page.html (for user's personal collections)
-  - post_details.html (for detailed post view)
-  - edit_comment.html (to update the comment)
-  - destinations_post.html (to view blog post for a selected destination)
-  - add_post.html (to allow user's input for blog posts)
-  - delete_post.html (to allow user to delete his post)
-  - search.html (to search a blog post)
-  - update_post.html (to allow user to edit his post)
-  - user_post_list.html (to allow user to view all post, which he posted so far)
-- Install Allauth for sign in, sign up and sign out templates with-  pip3 install django-allauth 
-	- Install crispy-forms to add styles to Django account templates with-  pip3 install crispy-bootstrap5
-- Intensive Manual Testing and Validation checks of each page and codes written
-- Final Deployment steps
-
------
+### Admin Management
+* Create / Update / Read / Delete menu items, descriptions.
+* View a history of admin actions taken.
+* Add and remove user accounts.
 
 [Back to top](#content)
 
 ## Design
 
-### Colours
-
-The colour scheme has considered based on easy accessibility for all and have been consistently maintained throughout the website. The colours were modified using [Colorswall](https://colorswall.com/). 
-
-![Color Palette](assets/features/color-palette.jpg)
-
 ### Typography
 
-Fonts were imported using Google Fonts. Roboto was used throughout with a backup of sans-serif. It was chosen for easy readability for users.
+Italiana was used throughout with a backup of sans-serif. It was chosen because it relates tot he Italian selection of the restaurant.
 
 ### Imagery
 
-All the imagery is related to the Indian tourist destination and website design. Some images including carousel are static. The remaining imagery was uploaded by the author to the database.
+All images were sources from pexels.com. They were seleted for their appealing and accurate representation of the menu items. 
 
 ### Wireframes
+The wireframes were created using Figma.
 
-The wireframes for this projected were generated using Balsamiq. 
-- [Wieframes for Desktop](assets/wireframes/Desktop-Wireframe.pdf)
-- [Wieframes for Tablet](assets/wireframes/Tablet-Wireframes.pdf)
-- [Wieframes for Mobile](assets/wireframes/Mobile-Wireframes.pdf)
-
-----
-
-## Database Diagram
-
-Smart Draw was used to create a database schema to visualise the types of custom models the project requires. This schema was used as a guide to what needed to be added to each model. Below is the Database structure that this project is based on. The relationship between Entities Post, Author, Destination and Comment are shown in this diagram.
-
-![ER Diagram](assets/ERD/Database_Diagram.jpg)
-
-[Back to top ⇧](#content)
+<img src="./coderscafe/media/readme_files/homepage-wireframe.png" width="800">
+<img src="./coderscafe/media/readme_files/description-wireframe.png" width="800">
+<img src="./coderscafe/media/readme_files/menu-wireframe.png" width="800">
 
 ----
 
@@ -226,33 +131,24 @@ Smart Draw was used to create a database schema to visualise the types of custom
 
 At the very first glimpse, user can see a Navigation menu with a search button and carousel-images on the homepage. Homepage provides the user with some quick information about the site and make use of all its features. User do not need to be registered to view a blog post. The responsive navigation bar is featured on all pages. 
 
-![Homepage](assets/features/home-page.jpg)
+<img src="./coderscafe/media/readme_files/homepage.png" width="800">
 
 ----
 
-- Upon scrolling down, there is destination section which indicates the available types of tourist destination blog post. Each destination card filter the post by destination name and navigate to that particular blog posts. 
+## About Page
 
-![Destination](assets/features/destinations-section1.jpg)
-![Destination](assets/features/destinations-section2.jpg)
-![Destination](assets/features/destinations-section3.jpg)
+The about page gives a simple description of the restaurant and the Italian theme of the menu.
 
-----
-
-- User can also select a specific destination blog posts from the navbar dropdown which navigates to that specific destination blog posts.
-
-![Destination](assets/features/dropdown-destination.jpg)
+<img src="./coderscafe/media/readme_files/about-page.png" width="800">
 
 ----
 
-## Navbar
+## Menu Page
 
-- The navigation bar is present at the top of every page and navigates all links to the respective pages.
-- The options to Register or Log in will change to the option to log out once a user has logged in.
-- The navbar is fully responsive, collapsing into a hamburger menu when the screen size becomes smaller.
+The menu page shows all the menu items along with their description. 
 
-![Navbar](assets/features/navbar.jpg)
+<img src="./coderscafe/media/readme_files/menu-page.png" width="800">
 
-![Navbar](assets/features/nav-hamburger.jpg)
 
 ## Navbar after loged in user
 
