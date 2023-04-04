@@ -1,10 +1,8 @@
 # The Pizza Place - Introduction
 
-**The Pizza Pace** Restaurant delivery app created using the Django framework that allows for the creation, reading,
-updating and deleting of data to a database. 
+**The Pizza Pace** Restaurant delivery app created using the Django framework that allows for the creation, reading, updating and deleting of data to a database. 
 
-> It targets **tourist destinations** of India, where user can view the blog post of tourist destinations.
-The user can view the blog post and comments. When the user is logged in, user can like/unlike a post, comment on a post and add a post from the user page.
+
 
 You can view the live site here:- https://incredible-india.herokuapp.com/
 
@@ -110,7 +108,7 @@ Epic Goals for User-
 
 ### Typography
 
-Italiana was used throughout with a backup of sans-serif. It was chosen because it relates tot he Italian selection of the restaurant.
+Italiana was used throughout with a backup of sans-serif. It was chosen because it relates to ehe Italian style and menu selection of the restaurant.
 
 ### Imagery
 
@@ -129,7 +127,7 @@ The wireframes were created using Figma.
 
 ## Home Page
 
-At the very first glimpse, user can see a Navigation menu with a search button and carousel-images on the homepage. Homepage provides the user with some quick information about the site and make use of all its features. User do not need to be registered to view a blog post. The responsive navigation bar is featured on all pages. 
+The homepage offers a stylish view of the restaurant and allows for easy access to the order page.
 
 <img src="./coderscafe/media/readme_files/homepage.png" width="800">
 
@@ -150,213 +148,41 @@ The menu page shows all the menu items along with their description.
 <img src="./coderscafe/media/readme_files/menu-page.png" width="800">
 
 
-## Navbar after loged in user
+## Admin Page
 
-* If the user is logged in (username Mahi is provided as an example here), navbar will be shown with user name and logout options. On a desktop, the navigation menu will appear as shown below:
+Here the admin has access to the CRUD (create, read, update, delete) functionality of the website. The admin can manage the user accounts, menu items, categories and social accounts for all users of the site.
 
-![logged-in-user-Navbar](assets/features/logged-in-user-navbar.jpg) 
+<img src="./coderscafe/media/readme_files/admin-page.png" height="600">
 
-## User Page
+## Order Page
 
-* This page will be only visible to logged-in user. Navbar will show this page with the username on it. When the user clicks on his/her name in the navbar, the user navigates to the User page. On this user page, the user can create new posts or view his old posts list to edit and delete any of his posts.
+The order page allows the user to select menu items, input their customer details and address and proceed to the order confrimation page.
 
-![logged-in-user-page](assets/features/logged-in-user-page.jpg) 
+<img src="./coderscafe/media/readme_files/submit-order.png" width="800">
 
-* When user clicks on the 'Add New Post' button, following form will be displayed.
+## Order Confirmation
 
-![Add-post](assets/features/add-post-form.png)
+The order confirmation gives the user an overview of the items ordered and a cash total. The user is also promted 
+to either pay through PayPal or with cash upon delivery.
 
-* If the user does not provide an image, the following default image will be presented.
+<img src="./coderscafe/media/readme_files/order-confirmation.png" width="600">
 
-![Default-post-image](assets/features/default-post-image.jpg)
+## Cafe login and Dashboard Page
 
+The cafe login button in the footer grants access to the dashboard page.
 
-* User can access all his posts by clicking on 'View Old Post' button. User can see the list of posts in this page which he has posted till now. Here he/she can edit or delete any of his post.
+<img src="./coderscafe/media/readme_files/cafe-login.png" width="200">
 
-![user-post-list](assets/features/user-post-list.jpg) 
-![edit-delete-post](assets/features/edit-delete-post.jpg)
+The dashboard page allows employees of the restaurant access to the websites records , with a running total of
+the revenue and a history of orders that have been filled.
 
-* If the user wants to edit his/her post, the following update form will be displayed with pre-filled content.
+<img src="./coderscafe/media/readme_files/dashboard-page.png" width="600">
 
-![update-post](assets/features/update-post-form.png)
-
-
-* User can see the following message to make sure to delete his post.
-
-![delete-post](assets/features/delete-post.jpg)
-
-
-* If the user hasn't posted anything before, the user will be shown that there are no posts and they can create.
-
-![no-user-post](assets/features/no-user-post.jpg) 
-
-----
-
-## Footer
-
-- On the website footer, users can see basic information such as my social media, copyright, and a quote about Incredible India.
-
-![Navbar](assets/features/footer.jpg)
-
-----
-
-## About Page
-
-- The About Page gives, users information about the Incredible India with a brief discription of india and the travel options to reach there.
-
-![About Us](assets/features/about-us-page1.jpg)
-![About Us](assets/features/about-us2.jpg)
-
-----
-
-## Blog Page
-
-This page enlists all the blog posts added so far to the website. The blog posts is paginated in a way that 9 posts are displayed. Further post can be accessed by clicking next button. Each blog post shows the image overlay with the destination type. The card body displays blog post title with specific fields and sliced post content along with the name of author, submitted date and shows the number of likes and comment icon in the card footer.
-
-![Blog Page](assets/features/blog-page1.jpg)
-![Blog Page](assets/features/blog-page2.jpg)
-
-----
-
-## Post-Detail Page
-
-- When a user clicks on the image or title of the blog post, they are brought to the post details page for the selected blog post. Here the user is shown the complete details of the blog post with image, author name, created time, title, best time, ideal-duration, number of likes and comments along with full content.
-- Underneath the post description the page displays all the approved comments on that blog post posted by signed-in users. 
-- At the bottom of this page, the Comment box is visible to the users.
-
-![Post-detail](assets/features/post-details1.jpg)
-![Post detail](assets/features/post-details2.jpg)
-
-- If user is signed-in, following comment box will appear. 
-
-![Comment box](assets/features/comment-box-login-user.jpg)
-
-- When User submit a comment or like/unlike a post, following messages/ alert displays respectively.
-
-![Comment-alert](assets/features/comment-alert.jpg)
-![Like post alert](assets/features/like-alert.jpg)
-![Unlike-post-alert](assets/features/unlike-alert.jpg)
-
-- Signed-in users can only edit/delete their own comments.
-
-![Edit Delete Comment](assets/features/edit-delete-comment.jpg)
-
-- When the user clicks on the delete button to remove his comment, following alert message pops up.
-
-![Delete Comment Alert](assets/features/delete-comment-alert.jpg)
-
-
-- User navigates to the edit-page when he clicks on the edit button. Here he can edit his comment text. 
-![Edit Comment](assets/features/edit-comment.jpg)
-
-- When user clicks on update button, a successful update alert message is displayed.
-
-![Update Comment Alert](assets/features/update-comment-alert.jpg)
-
-----
-
-## Destination Page
-
-User can select a specific destination blog posts either from destination section on home page or from the navbar dropdown which navigates to that specific destination blog posts.
-
-![Dropdown destination](assets/features/dropdown-destination.jpg)
-
-- For example, if user select a destination such as a hill station, the filtered blog posts will be displayed.
-![Filter destination posts](assets/features/selected-destination-post.jpg)
-
-- If there is no post for any selected destination, user will see the following message.
-![No post message](assets/features/no-destination-post.jpg)
-
-----
-
-## Security
-In order to properly interact with the website, the user needs to have an account and sign in. This ensures security of their comments and gives them rights to create, modify and delete them.
-
-### Sign Up
-
-- User is asked to enter username and password to sign up. User will be guided by validation messages if the username exists or password is too small which was created by modifying Django inbuilt templates.
-![Signup page](assets/features/user-register-page.jpg)
-
-- When users sign up to the website they will see a message at the top of the page saying "Successfully signed in as (username)".
-![Sign Up alert](assets/features/user-registration-alert.jpg)
-
-### Sign In
-
-- User can enter username and password to sign in. User will be guided by validation messages if the username or password is not correct. This was created by modifying Django inbuilt templates.
-
-![Sign In page](assets/features/user-login-page.jpg)
-
-- When users sign in to the website they will see a message at the top of the page saying "Successfully signed in as (username)".
-
-![Sign In alert](assets/features/signed-in-alert.jpg)
-
-### Sign Out
-
-- If the user is signed-in, then only they can see Logout nav-item in navbar. User will be taken to the Sign Out page. This was created by modifying Django inbuilt templates. When the user signs out, they are redirected to homepage.
-
-![Sign out page](assets/features/logout-page.jpg)
-
-- When users log out of the website they will see a message at the top of the page saying "You have signed out".
-
-![Sign out alert](assets/features/signout-alert.jpg)
-
-----
-
-## Search Button 
+## Search Bar 
 
 On the top right corner, a search input field is provided along with a button to submit. This allows the user to try and find the post they are looking for.
 
-![Search button](assets/features/search-button.jpg)
-
-- On the search results page, users can see posts related to their search. If there are posts for the user's search input, the user can click on the card result to go to the post detail page.
-
-![Search result](assets/features/search-result.jpg)
-
-- On the search results page, users will see this message if nothing is found for the search.
-
-![Search result](assets/features/no-search-result.jpg)
-
-- On the search results page, users will see this message for empty input.
-
-![Search result](assets/features/empty-input-for-search.jpg)
-
-----
-
-[Back to top ⇧](#content)
-
-## Admin Panel/Superuser
-
-- Admin accesses the project via logging into Django admin panel with a superuser id and password. The page appears as shown [here](assets/features/admin-panel-login.jpg).
-- A superuser "admin" was created for this project to manage the admin panel.
-- On the Admin Panel, as an admin I have full access to CRUD functionality so I can view, create, edit and delete the following ones:
-  - Posts
-  - Comments
-  - Author
-  - Destination
-- As admin I can also approve comments, approve posts and change the status and give other permissions to the users.
-
-### Admin 'Post' Model Management
-
-- On selecting Blog "Post", a list of blog posts is displayed with its title, slug, status, created_on and author name. Admin can select the post and edit or delete its data.
-- When a blog post is submitted by a user, its status is set to Draft by default.
-- When the status is set to Publish on Admin Approval, the post starts appearing in the website.
-
-The admin site for post model appears as shown [here](assets/features/admin-panel-post-model.jpg).
-
-### Admin 'Comment' Model Management
-
-- Upon selecting the Blog "Comment" model, a list of comments on a post is displayed with the username, comment body, post title, status and created_on. Admin can select the comment and edit or delete its data.
-- When a comment is submitted by a user, it requires approval from an admin in order to publish it on the comments section.
-
-The admin site for comment model appears as shown [here](assets/features/admin-panel-comment-model.jpg).
-
-### Admin 'Destination' Model Management
-
-- On selecting the Blog "Destination" model, a list of destinations for the blog post is displayed with title, slug and excerpt fields. Only Admin can add, edit or delete any destination data.
-
-The admin site for destination model appears as shown [here](assets/features/admin-panel-destination-model.jpg).
-
-----
+<img src="./coderscafe/media/readme_files/search-bar.png" width="600">
 
 ## Technologies Used
 
