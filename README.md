@@ -4,44 +4,26 @@
 
 
 
-You can view the live site here:- https://incredible-india.herokuapp.com/
+You can view the live site here:- https://
 
-
-![mockup](assets/mockup.jpg)
-
-----
 
 ## [Content](#content)
-- [Incredible India - Introduction](#incredible-india---introduction)
+- [The Pizza Place - Introduction](#the-pizza-place---introduction)
   - [User Experience - UX](#user-experience---ux)
     - [Site Aims](#site-aims)
-    - [Agile Methodology](#agile-methodology)
-      - [Epics and User Stories](#epics-and-user-stories)
-      - [Tasks](#tasks)
   - [Design](#design)
-    - [Colours](#colours)
     - [Typography](#typography)
     - [Imagery](#imagery)
     - [Wireframes](#wireframes)
-  - [Database Diagram](#database-diagram)
   - [Features](#features)
     - [Home Page](#home-page)
-      - [Navbar](#navbar)
-      - [Hero Image](#hero-image)
-      - [Destination Section](#destination-section)
-      - [Footer](#footer)
-    - [User Page](#user-page)
-    - [About Page](#about-page)
-    - [Blog Page](#blog-page)
-      - [Blog Details](#blog-details)
-      - [Blog Comments](#blog-comments)
-    - [Register](#register)
-    - [Login](#login)
-    - [Logout](#logout)
-    - [Destinations](#destinations)
-    - [Search Button](#search-button)
-    - [Alert Messages](#alert-messages)      
-  - [Admin Panel/Superuser](#admin-panelsuperuser)
+      - [About Page](#about-page)
+      - [Menu Page](#menu-page)
+      - [Admin Page](#admin-page)
+      - [Order Page](#order-page)
+      - [Order Confirmation Page](#order-confirmation-page)
+      - [Cafe Login and Dashboard Page](#cafe-login-and-dashboard-page)
+      - [Search Bar](#search-page)
   - [Technologies Used](#technologies-used)
     - [Languages Used](#languages-used)
     - [Django Packages](#django-packages)
@@ -49,18 +31,6 @@ You can view the live site here:- https://incredible-india.herokuapp.com/
   - [Testing](#testing)
       - [Validation](#validation)
       - [Manual Testing](#manual-testing)
-  - [Bugs](#bugs)
-      - [Fixed Bugs](#fixed-bugs)
-      - [Unfix Bugs](#unfix-bugs)
-  - [Deployment](#deployment)
-      - [Creating the Django project](#creating-the-django-project)
-      - [Creating Heroku app](#creating-heroku-app)
-      - [Set up Environment Variables](#set-up-environment-variables)
-      - [Heroku deployment](#heroku-deployment)
-      - [Final Deployment](#final-deployment)
-  - [Credits](#credits)
-    - [Content](#content)
-    - [Information Sources / Resources](#information-sources--resources)
   - [Acknowledgement](#acknowledgement)
 
 -----
@@ -120,6 +90,12 @@ The wireframes were created using Figma.
 <img src="./coderscafe/media/readme_files/homepage-wireframe.png" width="800">
 <img src="./coderscafe/media/readme_files/description-wireframe.png" width="800">
 <img src="./coderscafe/media/readme_files/menu-wireframe.png" width="800">
+
+### Entity Relationship Diagram
+
+This is a visual representation of the database schema.
+
+<img src="./coderscafe/media/readme_files/entity-relationship-diagram.png" width="800">
 
 ----
 
@@ -188,33 +164,27 @@ On the top right corner, a search input field is provided along with a button to
 
 ### Languages Used
 
-* [HTML 5](https://en.wikipedia.org/wiki/HTML/)- Used to structure all the templates on the site
-* [CSS 3](https://en.wikipedia.org/wiki/CSS)- to provide extra styling to the site
-* [JavaScript](https://www.javascript.com/)- Minimum javascript was used to fade out alerts after a few seconds.
-* [Python](https://www.python.org/)- To provide the functionality to the site. Packages used in the project can be found in requirements.txt
+* [HTML 5](https://en.wikipedia.org/wiki/HTML/)
+* [CSS 3](https://en.wikipedia.org/wiki/CSS)
+* [JavaScript](https://www.javascript.com/)
+* [Python](https://www.python.org/)
 
 ### Django Packages
 
-* [Gunicorn](https://gunicorn.org/)- As the server for Heroku.
-* [Cloudinary](https://cloudinary.com/)- Was used to host the static files and media for the site.
-* [Dj_database_url](https://pypi.org/project/dj-database-url/)- To parse the database URL from the environment variables in Heroku.
-* [Psycopg2](https://pypi.org/project/psycopg2/)- As an adaptor for Python and PostgreSQL databases.
-* [Summernote](https://summernote.org/)- As a text editor.
-* [Allauth](https://django-allauth.readthedocs.io/en/latest/installation.html)- For authentication, registration, account management.
-* [Crispy Forms](https://django-crispy-forms.readthedocs.io/en/latest/)- To style the forms.
+* [Pillow](https://pypi.org/project/Pillow/)
+* [Summernote](https://summernote.org/)
+* [Allauth](https://django-allauth.readthedocs.io/en/latest/installation.html)
+* [Crispy Forms](https://django-crispy-forms.readthedocs.io/en/latest/)
 
 ### Frameworks - Libraries - Programs Used
 
-* [Django](https://www.djangoproject.com/) was used as the framework for the back-end logic of the project. Django enables rapid and secure development.
-* [Bootstrap](https://getbootstrap.com/)- Used to style the website, add responsiveness and interactivity.
-* [Git](https://git-scm.com/)- Used for version control by utilizing the Gitpod terminal to commit to Git and push to GitHub.
-* [GitHub](https://github.com/)- Used to store the project's code after being pushed from Git.
-* [Heroku](https://id.heroku.com)- Used to deploy the live project.
-* [PostgreSQL](https://www.postgresql.org/)- Database used through heroku.
-* [Balsamiq](https://balsamiq.com/)- To build the wireframes for the project.
-* [Google Chrome Developer Tools](https://developers.google.com/web/tools/chrome-devtools) was used to inspect page elements, debug, troubleshoot and test features and adjust property values. Using the Lighthouse extension installed in Chrome Browser, the performance report was generated.
-* [Google Fonts:](https://fonts.google.com/) used for the Roboto font
-* [Font Awesome:](https://fontawesome.com/) was used to add icons for aesthetic and UX purposes.
+* [Django](https://www.djangoproject.com/)
+* [Bootstrap](https://getbootstrap.com/)
+* [GitHub](https://github.com/)
+* [Balsamiq](https://balsamiq.com/)
+* [Google Chrome Developer Tools](https://developers.google.com/web/tools/chrome-devtools) 
+* [Google Fonts:](https://fonts.google.com/)
+* [Font Awesome:](https://fontawesome.com/)
 
 -----
 
@@ -226,31 +196,6 @@ On the top right corner, a search input field is provided along with a button to
 I used the following validation tools to validate HTML, CSS, PYTHON codes. Below the link of TESTING.md file, which includes all validation results.  
 - HTML using [W3C HTML validator](https://validator.w3.org/)
 - CSS using [Jigsaw CSS validator](https://jigsaw.w3.org/css-validator/)
-- Python via [PEP8 CI Python Linter](https://pep8ci.herokuapp.com/)
-
-### Manual Testing
-Testing has taken place continuously throughout the development of the project. Each view was tested regularly. When the outcome was not as expected, debugging took place at that point. An exhaustive list of features were checked on different devices and browsers. They were performed and their scrrenshots can be found in the features section on how the distinct features render. All clickable links redirect to the correct pages.
-
-- Link for TESTING.md file:- [Testing Results Here](TESTING.md)
-
-----
-
-## Bugs
-
-| **Bug** | **Fix** |
-| ----------- | ----------- |
-| In navbar, the menu item destination dropdown was not populating.| Create destination_list view that return context (destination_list) then add `'blog.views.destinations_list'` in templates section in settings.py file |
-| Post image was not rendering on post_detail page(Issue only for mobile screens). | Remove class 'd-none' from post_detail page |
-| Alert messages was not disappeare after setTimeOut(2000)<br><details><summary>Alert Code</summary><img src="assets/alert-js.jpg"></details> | Copy code from bootstrap alert and customize with forEach <br><details><summary>New Alert Code</summary><img src="assets/new-alert-js.jpg"></details>|
-| Destination dropdown was again not populating. | Remove script scr 'bootstrap.min.js' because there is already 'bootstrap.bundle.min.js' |
-| Automated test was not working because of postgres database | Connect with local db.sqlite3 while running unit test<br><details><summary>Override database for unit test</summary><img src="assets/local-bd-for-unittest.jpg"></details>  |
-
-
-| **Unfix Bug** |
-| ----------- | 
-| When a logged in user adds a new post, the post slug should automatically be created from the post title. But the slug field is empty in the database. Slug is a required field when admin publishes a draft post, so here admin manually filled the slug field during publishing. Below is the screenshot from the post model in admin panel and view for Add Post.<br><details><summary>Empty slug screenshot</summary><img src="assets/empty-slug.jpg"></details><details><summary>Add Post View</summary><img src="assets/addPostView.jpg"></details> 
-
-----
 
 ## Future Implementation
 
@@ -259,139 +204,15 @@ Testing has taken place continuously throughout the development of the project. 
 
 [Back to top ⇧](#content)
 
-
-## Deployment
-
-### 1. Creating the Django Project
-* Go to the Code Institute Gitpod Full Template [Template](https://github.com/Code-Institute-Org/gitpod-full-template).
-* Click on `Use This Template` button, then create new repository.
-* Name our repository and click on `Create repository from template` button.
-* Once the template is available in your repository click on `Gitpod` button.
-* When the image for the template and the Gitpod are ready, open a new terminal to start a new Django App.
-* Install Django and gunicorn: `pip3 install 'django<4' gunicorn`.
-* Install supporting database libraries dj_database_url and psycopg2 library: `pip3 install dj_database_url==0.5.0 psycopg2`.
-* Install Cloudinary libraries to manage static files: `pip install dj-3-cloudinary-storage`.
-* Create file for requirements: `pip freeze --local > requirements.txt`.
-* Create project:`django-admin startproject project_name .`.
-* Create app: `python manage.py startapp app_name`.
-* Add app to list of `installed apps` in settings.py file: `'app_name'`.
-* Migrate changes: `python manage.py migrate`.
-* Test server works locally: `python manage.py runserver`.
-* If the app has been installed correctly the window will display- The install worked successfully! Congratulations!
-
-### 2. Create your Heroku app
-* Navigate to [Heroku](https://id.heroku.com).
-* Create a Heroku account by entering your email address and a password (or login if you have one already).
-* Activate the account through the authentication email sent to your email account.
-* Click the **new button** on the top right corner of the screen and select create a new app from the dropdown menu.
-* Enter a unique name for the application.
-* Select the appropriate region for the application.
-* Click create app.
-* Click Reveal Config Vars and add a new record with `DATABASE_URL`.
-* Click Reveal Config Vars and add a new record with `PORT`.
-* Click Reveal Config Vars and add a new record with the `DISABLE_COLLECTSTATIC = 1`(note: this must be either removed or set to 0 for final deployment).
-* Next, scroll down to the Buildpack section, click `Add Buildpack` select python and click Save Changes.
-
-### 3. Set up Environment Variables
-* In you IDE create a new env.py file in the top level directory.
-* Add env.py to the .gitignore file.
-* In env.py import the os library.
-* In env.py add `os.environ["DATABASE_URL"]` = "Paste the link copied from Heroku DATABASE_URL".
-* In env.py add `os.environ["SECRET_KEY"] = "Make up your own random secret key"`.
-* In Heroku Settings tab Config Vars enter the same `SECRET_KEY` created in env.py by entering 'SECRET_KEY' in the box for 'KEY' and your randomly created secret key in the 'value' box.
-
-### 4. Setting up settings.py
-* In your Django 'settings.py' file type:
-
- ```
- from pathlib import Path
- import os
- import dj_database_url
-
- if os.path.isfile("env.py"):
-  import env
- ```
-* Remove the default insecure secret key in settings.py and replace with the link to the secret key variable in Heroku by typing: `SECRET_KEY = os.environ.get(SECRET_KEY)`
-* Comment out the `DATABASES` section in settings.py and replace with:
-```
-DATABASES = {
-  'default': 
-  dj_database_url.parse(os.environ.get("DATABASE_URL"))
-  }`
-```
-* Create a Cloudinary account and from the 'Dashboard' in Cloudinary copy your url into the env.py file by typing: `os.environ["CLOUDINARY_URL"] = "cloudinary://<insert-your-url>"`
-* In Heroku, click Reveal Config Vars and add a new record with the `CLOUDINARY_URL`
-* Add Cloudinary libraries to the installed apps section of settings.py file:
- ```
- 'cloudinary_storage'
- 'django.contrib.staticfiles''
- 'cloudinary'
- ```
-* Connect Cloudinary to the Django app in `settings.py`:
-```
-STATIC_URL = '/static'
-STATICFILES_STORAGE = 'cloudinary_storage.storage.StaticHashedCloudinaryStorage'
-STATICFILES_DIRS = [os.path.join(BASE_DIR, 'STATIC')]
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
-MEDIA_URL = '/media/'
-DEFAULT_FILE_STORAGE =
-'cloudinary_storage.storage.MediaCloudinaryStorage'
-* Link file to the templates directory in Heroku 
-* Place under the BASE_DIR: TEMPLATES_DIR = os.path.join(BASE_DIR,
-'templates')
-```
-* Change the templates directory to TEMPLATES_DIR. Place within the TEMPLATES array: `'DIRS': [TEMPLATES_DIR]`
-* Add Heroku Hostname to ALLOWED_HOSTS: 
-```ALLOWED_HOSTS = ['<Heroku_app_name>.herokuapp.com', 'localhost']```
-* Create Procfile at the top level of the file structure and insert the following:
-    ``` web: gunicorn PROJECT_NAME.wsgi ```
-
-* Commit and push the code to the GitHub Repository.
-
-### 5. Heroku Deployment: 
-* Click Deploy tab in Heroku.
-* Select Github as the deployment method.
-* Confirm you want to connect to GitHub.
-* Search for the repository name and click the connect button to link the heroku app with the Github repository. The box will confirm that heroku is connected to the repository.
-* Scroll to the bottom of the deploy page and select the preferred deployment type.
-* Click either Enable Automatic Deploys for automatic deployment when you push updates to Github or To manually deploy click the button 'Deploy Branch'. The default 'main' option in the dropdown menu should be selected in both cases. When the app is deployed a message 'Your app was successfully deployed' will be shown. Click 'view' to see the deployed app in the browser.
-
-### 6. Final Deployment
-In the IDE:
-* When development is complete change the debug setting to: `DEBUG = False` in `settings.py` 
-* In Heroku settings config vars change the `DISABLE_COLLECTSTATIC` value to 0
-* Because DEBUG must be switched to True for development and False for production it is recommended that only manual deployment is used in Heroku. 
-* To manually deploy click the button 'Deploy Branch'. The default 'main' option in the dropdown menu should be selected in both cases. When the app is deployed a message 'Your app was successfully deployed' will be shown. Click 'view' to see the deployed app in the browser.
-
-----
-
-[Back to top](#content)
-
-# Credits
-
-## Code
-- The basic set up of the website was done by strictly following the steps as described in Code Institue Full Stack Frameworks module - Django walkthrough project `"I Think Therefore I Blog"`.
-- Followed the project of one of my friend who is also a CI student (Roshana Vakeel): https://github.com/RoshnaVakkeel/Little_Learners_Lab_Logs/blob/main/logs/forms.py 
-- Another project link I found from Linkdin, also CI's student (Laura Mayock): https://github.com/LauraMayock/The-happy-reader
-- [The Newsbox](https://github.com/rashdogg74/newsbox86)- One of the project shared by my cohort facilitator on Slack. 
-
-## Learning Resources
-- Code Institutes Full Stack Framework Module, mainly the 'blog' walkthrough project.
-- Youtube videos by [Codemy](https://www.youtube.com/watch?v=6-XXvUENY_8&list=PLCC34OHNcOtr025c1kHSPrnP18YPB-NFi&index=5)
-- [W3CSchool](https://www.w3schools.com/django/)
-- [Django Documentation](https://docs.djangoproject.com/en/3.2/ref/models/fields/#field-types)(For different quaries while doing project. For example query about models, fields, form widgets, auth and many more)
-- Other open source to understand and solve following types of error : UnboundedLocalError, MultivalueDictKeyError,  ProgrammingError, InvalidCursorName etc.
-- Youtube videos [The Dumbfounds](https://www.youtube.com/playlist?list=PLbpAWbHbi5rMF2j5n6imm0enrSD9eQUaM) for automated testing.
-
 ## Content and Media
 
-Mostly images and post content are taken from the website https://www.holidify.com/ and https://www.incredible-india.org/. Some images are taken from [Pexels](https://www.pexels.com/).
+All images are taken from [Pexels](https://www.pexels.com/).
 
 ----
 
 ## Acknowledgement
 
-Special thanks to my mentor Sandeep Aggarwal, My fellow student Roshna, Tutor support and Slack community for their assistance throughout this project.
+I'd like to thank Richey my tutor for all his help, I couldn't of done it without him.
 
 [Back to top](<#content>)
    
